@@ -1,0 +1,42 @@
+/* GENERAL FUNCTIONS */
+
+// Changes px to rem or em
+@function px-to-rem($px) {
+  @return $px / 16;
+}
+
+/* COLORS MANAGEMENT */
+
+// Returning the color from map
+@function color($key: "blue") {
+  @return map-get($colors, $key);
+}
+
+// Returning the theme-color from map
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+/* FONT MANAGEMENT */
+
+// Font size calculation
+@function font-size($key: "sm") {
+  @if type-of($key) == string {
+    @return map-get($font-sizes, $key);
+  } @else if(type-of($key) == number) {
+    @return px-to-rem($key);
+  } @else {
+    @return null;
+  }
+}
+
+// Font weight calculation
+@function font-weight($key: "regular") {
+  @if type-of($key) == string {
+    @return map-get($font-weights, $key);
+  } @else if(type-of($key) == number && ($key % 100) == 0) {
+    @return $key;
+  } @else {
+    @return null;
+  }
+}

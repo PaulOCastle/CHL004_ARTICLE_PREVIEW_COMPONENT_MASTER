@@ -1,0 +1,17 @@
+/* GENERAL MIXINS */
+
+// Flexbox
+@mixin flex ($direction: null, $justify: null, $a-items: null) {
+  display: flex;
+  @if $direction == null {} @else {flex-direction: $direction;}
+  @if $justify == null {} @else {justify-content: $justify;}
+  @if $a-items == null {} @else {align-items: $a-items;}
+}
+
+/* RESPONSIVENESS */
+
+@mixin responsive ($breakpoint) {
+  @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
