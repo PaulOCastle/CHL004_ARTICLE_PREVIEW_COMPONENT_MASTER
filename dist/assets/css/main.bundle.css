@@ -1,12 +1,15 @@
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap);
 /* Styles main file */
 /* BREAKPOINTS */
 /* COLORS */
 /* FONTS */
 /* GENERAL MIXINS */
 /* RESPONSIVENESS */
-/* GENERAL FUNCTIONS */
+/* MATH FUNCTIONS */
 /* COLORS MANAGEMENT */
 /* FONT MANAGEMENT */
+/* MARGIN & PADDING MANAGEMENT */
+/* My resets */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
 big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
@@ -69,12 +72,62 @@ a {
 }
 
 /* Main modules of the page */
+html {
+  width: auto;
+  height: auto;
+}
+
+body {
+  width: auto;
+  height: auto;
+  background-color: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125em;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer .attribution {
-  font-size: 11px;
+  font-size: 0.8125em;
   text-align: center;
 }
 footer .attribution a {
   color: #3e52a3;
+}
+
+.card {
+  /* MOBILE 1st STYLES */
+  background-color: white;
+  border-radius: 0.5em;
+  width: 20.4375em;
+  box-shadow: 0px 30px 35px rgba(158, 175, 194, 0.251);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* RESPONSIVE STYLES */
+}
+.card .card-img {
+  width: 100%;
+  height: 12.5em;
+  overflow: hidden;
+}
+.card .card-img img {
+  width: 100%;
+  margin: -1.125em 0em 0em 0em;
+}
+@media only screen and (min-width: 64em) {
+  .card {
+    width: 45.6875em;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=main.bundle.css.map*/

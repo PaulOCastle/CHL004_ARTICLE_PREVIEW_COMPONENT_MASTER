@@ -1,20 +1,21 @@
 /* BREAKPOINTS */
 $breakpoints: (
-        s: 23.4375em,   // 375px
-        m: 48em,        // 768px
-        l: 64em,        // 1024px
-        xl: 90em,       // 1440px
-        xxl: 160em,     // 2560px
+        s: (375/16) + em,     // 375px
+        m: (768/16) + em,     // 768px
+        l: (1024/16) + em,    // 1024px
+        xl: (1440/16) + em,   // 1440px
+        xxl: (2560/16) + em,  // 2560px
 );
 
 /* COLORS */
 
 // Set the theme colors here
 $theme-colors: (
-        "primary": #33cccc,
-        "secondary": #cc0099,
-        "dark": #444444,
-        "light": #f2f2f2,
+        "primary": #cc0099, // So in case I forgot to specify the color I got a different one
+        "very-darck": #48556a,
+        "darck": #6d7f97,
+        "grayish": #9eafc2,
+        "light": #ecf2f8,
 );
 
 // Set the general colors here
@@ -22,19 +23,20 @@ $colors: (
         "blue": blue,
         "red": red,
         "yellow": yellow,
+        "white": white,
 );
 
 /* FONTS */
 
 $font-sizes: (
-        "xs": .625rem,  // 10px
-        "s": .875rem,   // 14px
-        "sm": 1rem,     // 16px
-        "m": 1.25rem,   // 20px
-        "ml": 1.5rem,   // 24px
-        "l": 2rem,      // 32px
-        "xl": 3rem,     // 48px
-        "xxl": 4rem,    // 64px
+        "xs": px-to-em(10),   // 10px
+        "s": px-to-em(14),    // 14px
+        "sm": px-to-em(16),   // 16px
+        "m": px-to-em(20),    // 20px
+        "ml": px-to-em(24),   // 24px
+        "l": px-to-em(32),    // 32px
+        "xl": px-to-em(48),   // 48px
+        "xxl": px-to-em(64),  // 64px
 );
 
 $font-weights: (

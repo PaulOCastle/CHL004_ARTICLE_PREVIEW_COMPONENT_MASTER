@@ -14,7 +14,7 @@
     <meta name="description" content="">
 
     <!-- Title -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
     <title>Frontend Mentor | Article preview component</title>
 
     <!-- Fonts -->
@@ -24,27 +24,80 @@
 
 </head>
 <body>
-
 <main>
-    THIS IS A TEST
-    
-    Shift the overall look and feel by adding these wonderful
-    touches to furniture in your home
+    <section class="card">
 
-    Ever been in a room and felt like something was missing? Perhaps
-    it felt slightly bare and uninviting. I’ve got some simple tips
-    to help you make any room feel complete.
+        <div class="card-img">
+            <img src="./assets/img/drawers.jpg" alt="green drawers">
+        </div>
 
-    Michelle Appleton
-    28 Jun 2020
+        <div class="card-body">
 
-    Share
+            <div class="card-header">
+                <h2>
+                    Shift the overall look and feel by adding these wonderful
+                    touches to furniture in your home
+                </h2>
+            </div>
+
+            <div class="card-content">
+                <p>
+                    Ever been in a room and felt like something was missing? Perhaps
+                    it felt slightly bare and uninviting. I’ve got some simple tips
+                    to help you make any room feel complete.
+                </p>
+            </div>
+
+            <div class="card-footer">
+
+                <div class="avatar">
+                    <img src="./assets/img/avatar-michelle.jpg" alt="michelle's avatar">
+                </div>
+
+                <div class="user-info">
+                    <h4 class="user-name">
+                        Michelle Appleton
+                    </h4>
+                    <p class="published-at">
+                        28 Jun 2020
+                    </p>
+                </div>
+
+                <button>
+                    <img src="./assets/img/icon-share.svg" alt="share button">
+                </button>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-arrow"></div>
+            <div class="modal-body">
+                <p>
+                    Share
+                </p>
+                <div class="modal-links">
+                    <a href="#">
+                        <img src="./assets/img/icon-facebook.svg" alt="facebook link">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/icon-twitter.svg" alt="twitter link">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/icon-pinterest.svg" alt="pinterest link">
+                    </a>
+                </div>
+                <button>
+                    <img src="./assets/img/icon-share.svg" alt="share button">
+                </button>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/PaulOCastle">Pau Ferrer</a>.
     </div>
 </footer>
 

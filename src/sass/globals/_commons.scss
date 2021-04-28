@@ -1,23 +1,30 @@
 /* Main modules of the page */
-body {
-
+html {
+  width: auto;
+  height: auto;
 }
 
-header {
-
+body {
+  width: auto;
+  height: auto;
+  background-color: theme-color("light");
+  font-family: 'Manrope', sans-serif;
+  font-size: font-size(13);   // 13px
 }
 
 main {
-
+  width: 100vw;
+  height: 100vh;
+  @include flex(column, center, center);
 }
 
 footer {
 
   .attribution {
-    font-size: 11px;
+    font-size: font-size(13);
     text-align: center;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: #3e52a3;
   }
 }

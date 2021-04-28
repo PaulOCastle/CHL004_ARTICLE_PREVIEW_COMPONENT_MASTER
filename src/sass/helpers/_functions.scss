@@ -1,8 +1,8 @@
-/* GENERAL FUNCTIONS */
+/* MATH FUNCTIONS */
 
 // Changes px to rem or em
-@function px-to-rem($px) {
-  @return $px / 16;
+@function px-to-em($px) {
+  @return ($px/16) + em;
 }
 
 /* COLORS MANAGEMENT */
@@ -24,7 +24,7 @@
   @if type-of($key) == string {
     @return map-get($font-sizes, $key);
   } @else if(type-of($key) == number) {
-    @return px-to-rem($key);
+    @return px-to-em($key);
   } @else {
     @return null;
   }
@@ -39,4 +39,10 @@
   } @else {
     @return null;
   }
+}
+
+/* MARGIN & PADDING MANAGEMENT */
+
+@function space($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  @return px-to-em($top) px-to-em($right) px-to-em($bottom) px-to-em($left);
 }
