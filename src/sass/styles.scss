@@ -1,6 +1,7 @@
 /* Styles main file */
 
 // Fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
 // Helpers
 @import './helpers/variables';
@@ -14,5 +15,6 @@
 // Libs
 
 // Components
+@import './components/cards';
 
 // Pages

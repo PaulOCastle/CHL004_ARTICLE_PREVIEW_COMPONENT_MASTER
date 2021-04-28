@@ -34,7 +34,7 @@
 @function font-weight($key: "regular") {
   @if type-of($key) == string {
     @return map-get($font-weights, $key);
-  } @else if(type-of($key) == number && ($key % 100) == 0) {
+  } @else if(type-of($key) == number and ($key % 100) == 0) {
     @return $key;
   } @else {
     @return null;
