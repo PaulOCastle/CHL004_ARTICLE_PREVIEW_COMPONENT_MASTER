@@ -22,9 +22,81 @@
 
     .card-body {
         width: 100%;
-    }
+        padding: space(35, 32, 19, 32);
 
-    // TODO
+        .card-header {
+            font-size: font-size("sm"); // 16px
+            font-weight: font-weight("extrabold"); // 700
+            line-height: px-to-em(24); // 24px
+            letter-spacing: 0.01em;
+            padding: space(0,0,12,0);
+        }
+
+        .card-content {
+            font-size: font-size(13);
+            font-weight: font-weight("semibold"); // 500
+            line-height: px-to-em(20); // 20px
+            letter-spacing: 0.01em;
+            color: theme-color("dark");
+        }
+
+        .card-footer {
+            padding: space(34,0,0,0);
+            @include flex(row, flex-start, center);
+
+            .user-avatar {
+                width: px-to-em(40);
+                height: px-to-em(40);
+
+                img {
+                    width: px-to-em(40);
+                    height: px-to-em(40);
+                    border-radius: px-to-em(20);
+                }
+            }
+
+            .user-info {
+                padding: space(0,0,0,16);
+                width: px-to-em(191);
+
+                .user-name {
+                    font-size: font-size(13);
+                    font-weight: font-weight("semibold");
+                    line-height: px-to-em(22);
+                    letter-spacing: 0.03em;
+                }
+
+                .published-at {
+                    font-size: font-size(13);
+                    font-weight: font-weight("semibold");
+                    line-height: px-to-em(22);
+                    letter-spacing: 0.01em;
+                    color: theme-color("dark");
+                }
+            }
+
+            button {
+                width: px-to-em(32);
+                height: px-to-em(32);
+                border-radius: px-to-em(16);
+                background-color: theme-color("light");
+                cursor: pointer;
+                transition: background-color .5s ease-in-out;
+
+                &:hover {
+                    background-color: theme-color("dark");
+                    
+                    svg path {
+                        fill: theme-color("light");
+                    }
+                }
+            }
+        }
+    } // .card-body end
+
+    .modal {
+        display: none;
+    }
 
     /* RESPONSIVE STYLES */
 

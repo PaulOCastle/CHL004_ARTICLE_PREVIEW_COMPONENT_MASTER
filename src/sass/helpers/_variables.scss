@@ -12,8 +12,8 @@ $breakpoints: (
 // Set the theme colors here
 $theme-colors: (
         "primary": #cc0099, // So in case I forgot to specify the color I got a different one
-        "very-darck": #48556a,
-        "darck": #6d7f97,
+        "very-dark": #48556a,
+        "dark": #6d7f97,
         "grayish": #9eafc2,
         "light": #ecf2f8,
 );
@@ -29,14 +29,14 @@ $colors: (
 /* FONTS */
 
 $font-sizes: (
-        "xs": px-to-em(10),   // 10px
-        "s": px-to-em(14),    // 14px
-        "sm": px-to-em(16),   // 16px
-        "m": px-to-em(20),    // 20px
-        "ml": px-to-em(24),   // 24px
-        "l": px-to-em(32),    // 32px
-        "xl": px-to-em(48),   // 48px
-        "xxl": px-to-em(64),  // 64px
+        "xs": (10/16) + em,   // 10px
+        "s": (14/16) + em,    // 14px
+        "sm": (16/16) + em,   // 16px
+        "m": (20/16) + em,    // 20px
+        "ml": (24/16) + em,   // 24px
+        "l": (32/16) + em,    // 32px
+        "xl": (48/16) + em,   // 48px
+        "xxl": (64/16) + em,  // 64px
 );
 
 $font-weights: (

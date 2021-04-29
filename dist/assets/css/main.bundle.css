@@ -83,6 +83,7 @@ body {
   background-color: #ecf2f8;
   font-family: "Manrope", sans-serif;
   font-size: 0.8125em;
+  color: #48556a;
 }
 
 main {
@@ -124,6 +125,71 @@ footer .attribution a {
 }
 .card .card-body {
   width: 100%;
+  padding: 2.1875em 2em 1.1875em 2em;
+}
+.card .card-body .card-header {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  padding: 0em 0em 0.75em 0em;
+}
+.card .card-body .card-content {
+  font-size: 0.8125em;
+  font-weight: 500;
+  line-height: 1.25em;
+  letter-spacing: 0.01em;
+  color: #6d7f97;
+}
+.card .card-body .card-footer {
+  padding: 2.125em 0em 0em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card .card-body .card-footer .user-avatar {
+  width: 2.5em;
+  height: 2.5em;
+}
+.card .card-body .card-footer .user-avatar img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 1.25em;
+}
+.card .card-body .card-footer .user-info {
+  padding: 0em 0em 0em 1em;
+  width: 11.9375em;
+}
+.card .card-body .card-footer .user-info .user-name {
+  font-size: 0.8125em;
+  font-weight: 500;
+  line-height: 1.375em;
+  letter-spacing: 0.03em;
+}
+.card .card-body .card-footer .user-info .published-at {
+  font-size: 0.8125em;
+  font-weight: 500;
+  line-height: 1.375em;
+  letter-spacing: 0.01em;
+  color: #6d7f97;
+}
+.card .card-body .card-footer button {
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  background-color: #ecf2f8;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.card .card-body .card-footer button:hover {
+  background-color: #6d7f97;
+}
+.card .card-body .card-footer button:hover svg path {
+  fill: #ecf2f8;
+}
+.card .modal {
+  display: none;
 }
 @media only screen and (min-width: 64em) {
   .card {
