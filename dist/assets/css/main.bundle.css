@@ -122,6 +122,9 @@ footer .attribution a {
   width: 100%;
   margin: -1.125em 0em 0em 0em;
 }
+.card .card-body {
+  width: 100%;
+}
 @media only screen and (min-width: 64em) {
   .card {
     width: 45.6875em;
