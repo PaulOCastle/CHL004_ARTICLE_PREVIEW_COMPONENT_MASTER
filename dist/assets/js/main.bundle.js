@@ -1,13 +1,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/modals/_modal-share.js":
-/*!***************************************!*\
-  !*** ./src/js/modals/_modal-share.js ***!
-  \***************************************/
+/***/ "./src/js/cards/_sharing.js":
+/*!**********************************!*\
+  !*** ./src/js/cards/_sharing.js ***!
+  \**********************************/
 /***/ (() => {
 
-
+// TODO Create a changeClass() function addEventListener to BTNs to action changeClass
 
 /***/ })
 
@@ -88,8 +88,8 @@ var __webpack_exports__ = {};
   !*** ./src/js/scripts.js ***!
   \***************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modals_modal_share__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modals/_modal-share */ "./src/js/modals/_modal-share.js");
-/* harmony import */ var _modals_modal_share__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modals_modal_share__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _cards_sharing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards/_sharing */ "./src/js/cards/_sharing.js");
+/* harmony import */ var _cards_sharing__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_cards_sharing__WEBPACK_IMPORTED_MODULE_0__);
 /* MAIN SCRIPTS FILE */
 
 // JS Libs

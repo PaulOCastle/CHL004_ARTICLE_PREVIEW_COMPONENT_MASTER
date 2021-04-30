@@ -3,4 +3,4 @@
 // JS Libs
 
 // Components
-import './modals/_modal-share'
+import './cards/_sharing'
