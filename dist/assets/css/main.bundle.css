@@ -198,6 +198,7 @@ footer .attribution a {
   border-radius: 0rem 0rem 0.5rem 0.5rem;
   padding: 0rem 2rem 0rem 2rem;
   background-color: #48556a;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out, visibility 1s ease-in-out;
 }
 .card .card-body .sharing .arrow-frame {
   display: none;
@@ -258,11 +259,10 @@ footer .attribution a {
 .card .card-body .sharing .sharing-body button:hover svg path {
   fill: #6d7f97;
 }
-.card .card-body .sharing.open {
-  display: block;
-}
 .card .card-body .sharing.closed {
-  display: none;
+  opacity: 0;
+  transform: translateY(100%);
+  visibility: hidden;
 }
 @media only screen and (min-width: 64em) {
   .card {

@@ -1,13 +1,20 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/cards/_sharing.js":
-/*!**********************************!*\
-  !*** ./src/js/cards/_sharing.js ***!
-  \**********************************/
+/***/ "./src/js/buttons/_sharing.js":
+/*!************************************!*\
+  !*** ./src/js/buttons/_sharing.js ***!
+  \************************************/
 /***/ (() => {
 
-// TODO Create a changeClass() function addEventListener to BTNs to action changeClass
+const sharingBtns = document.querySelectorAll('.sharing-btn')
+const actions = document.querySelector('#sharing')
+
+sharingBtns.forEach(function (btn) {
+    btn.addEventListener('click', function() {
+        actions.classList.toggle('closed')
+    })
+})
 
 /***/ })
 
@@ -88,8 +95,8 @@ var __webpack_exports__ = {};
   !*** ./src/js/scripts.js ***!
   \***************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cards_sharing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards/_sharing */ "./src/js/cards/_sharing.js");
-/* harmony import */ var _cards_sharing__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_cards_sharing__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _buttons_sharing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./buttons/_sharing */ "./src/js/buttons/_sharing.js");
+/* harmony import */ var _buttons_sharing__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_buttons_sharing__WEBPACK_IMPORTED_MODULE_0__);
 /* MAIN SCRIPTS FILE */
 
 // JS Libs

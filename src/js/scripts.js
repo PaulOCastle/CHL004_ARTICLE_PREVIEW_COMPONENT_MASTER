@@ -3,4 +3,4 @@
 // JS Libs
 
 // Components
-import './cards/_sharing'
+import './buttons/_sharing'

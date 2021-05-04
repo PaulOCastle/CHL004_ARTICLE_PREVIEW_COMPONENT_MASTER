@@ -1,1 +1,0 @@
-// TODO Create a changeClass() function addEventListener to BTNs to action changeClass
