@@ -5,7 +5,7 @@
     background-color: color("white");
     border-radius: toRem(8);
     max-width: toRem(327);
-    box-shadow: 0px 30px 35px hsla(212, 23%, 69%, 0.251);
+    box-shadow: 0px 30px 35px rgba(158, 175, 194, 0.25);
     @include flex(column);
 
     .card-img {
@@ -103,6 +103,7 @@
             border-radius: space(0,0,8,8);
             padding: space(0,32,0,32);
             background-color: theme-color("very-dark");
+            box-shadow: 0px 14px 5px rgba(158, 175, 194, 0.15);
             transition:
                 opacity 1s ease-in-out,
                 transform 1s ease-in-out,
@@ -110,17 +111,6 @@
 
             .arrow-frame {
                 display: none;
-                position: relative;
-
-                .arrow {
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    background-color: theme-color("very-dark");
-                    transform: rotate(45deg);
-                    position: absolute;
-                    left: toRem(110);
-                    top: 2.75rem;
-                }
             }
 
             .sharing-body {
@@ -184,7 +174,96 @@
 
     // Screen Width > 768px
     @include responsive(l) {
-        width: toRem(731);
+        max-width: toRem(731);
         @include flex(row);
+
+        .card-img {
+            width: 29.875rem;
+            height: 100%;
+            border-radius: space(8,0,0,8);
+
+            img {
+                width: toRem(350.75);
+                height: 100%;
+                margin: 0;
+            }
+        }
+
+        .card-body {
+            padding: space(32,40,32,40);
+
+            .card-header {
+                font-size: font-size("m");
+                line-height: toRem(28);
+                padding: 0;
+            }
+
+            .card-content {
+                padding: space(11,0,24,0);
+            }
+
+            .card-footer {
+                padding: 0;
+
+                .user-info {
+                    width: toRem(309);
+                }
+
+                button {
+                
+                    &.active {
+                        background-color: theme-color("dark");
+
+                        svg path {
+                            fill: theme-color("light");
+                        }
+
+                        &:hover {
+                            background-color: theme-color("light");
+                            
+                            svg path {
+                                fill: theme-color("dark");
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sharing {
+                left: 17.65rem;
+                bottom: 6.25rem;
+                width: 15.5rem;
+                height: toRem(55);
+                border-radius: space(8,8,8,8);
+                padding: space(0,37,0,37);
+
+                .arrow-frame {
+                    display: block;
+                    position: relative;
+
+                    .arrow {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background-color: theme-color("very-dark");
+                        transform: rotate(45deg);
+                        position: absolute;
+                        left: 4.55rem;
+                        top: 2.5rem;
+                    }
+                }
+
+                .sharing-body {
+                        
+                    .sharing-links {
+                        padding: 0 0 0 1rem;
+                        z-index: 1;
+                    }
+
+                    button {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

@@ -15,11 +15,13 @@ body {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 2rem);
   @include flex(column, center, center);
 }
 
 footer {
+  width: 100vw;
+  height: 2rem;
 
   .attribution {
     font-size: font-size(13);

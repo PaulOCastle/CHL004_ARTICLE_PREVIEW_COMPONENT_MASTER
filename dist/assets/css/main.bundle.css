@@ -88,13 +88,17 @@ body {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+footer {
+  width: 100vw;
+  height: 2rem;
+}
 footer .attribution {
   font-size: 0.8125rem;
   text-align: center;
@@ -108,7 +112,7 @@ footer .attribution a {
   background-color: white;
   border-radius: 0.5rem;
   max-width: 20.4375rem;
-  box-shadow: 0px 30px 35px rgba(158, 175, 194, 0.251);
+  box-shadow: 0px 30px 35px rgba(158, 175, 194, 0.25);
   display: flex;
   flex-direction: column;
   /* RESPONSIVE STYLES */
@@ -129,7 +133,7 @@ footer .attribution a {
   position: relative;
 }
 .card .card-body .card-header {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0.01em;
@@ -198,20 +202,11 @@ footer .attribution a {
   border-radius: 0rem 0rem 0.5rem 0.5rem;
   padding: 0rem 2rem 0rem 2rem;
   background-color: #48556a;
+  box-shadow: 0px 14px 5px rgba(158, 175, 194, 0.15);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out, visibility 1s ease-in-out;
 }
 .card .card-body .sharing .arrow-frame {
   display: none;
-  position: relative;
-}
-.card .card-body .sharing .arrow-frame .arrow {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #48556a;
-  transform: rotate(45deg);
-  position: absolute;
-  left: 6.875rem;
-  top: 2.75rem;
 }
 .card .card-body .sharing .sharing-body {
   width: 100%;
@@ -266,9 +261,76 @@ footer .attribution a {
 }
 @media only screen and (min-width: 64em) {
   .card {
-    width: 45.6875rem;
+    max-width: 45.6875rem;
     display: flex;
     flex-direction: row;
+  }
+  .card .card-img {
+    width: 29.875rem;
+    height: 100%;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+  .card .card-img img {
+    width: 21.921875rem;
+    height: 100%;
+    margin: 0;
+  }
+  .card .card-body {
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+  .card .card-body .card-header {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0;
+  }
+  .card .card-body .card-content {
+    padding: 0.6875rem 0rem 1.5rem 0rem;
+  }
+  .card .card-body .card-footer {
+    padding: 0;
+  }
+  .card .card-body .card-footer .user-info {
+    width: 19.3125rem;
+  }
+  .card .card-body .card-footer button.active {
+    background-color: #6d7f97;
+  }
+  .card .card-body .card-footer button.active svg path {
+    fill: #ecf2f8;
+  }
+  .card .card-body .card-footer button.active:hover {
+    background-color: #ecf2f8;
+  }
+  .card .card-body .card-footer button.active:hover svg path {
+    fill: #6d7f97;
+  }
+  .card .card-body .sharing {
+    left: 17.65rem;
+    bottom: 6.25rem;
+    width: 15.5rem;
+    height: 3.4375rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0rem 2.3125rem 0rem 2.3125rem;
+  }
+  .card .card-body .sharing .arrow-frame {
+    display: block;
+    position: relative;
+  }
+  .card .card-body .sharing .arrow-frame .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #48556a;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 4.55rem;
+    top: 2.5rem;
+  }
+  .card .card-body .sharing .sharing-body .sharing-links {
+    padding: 0 0 0 1rem;
+    z-index: 1;
+  }
+  .card .card-body .sharing .sharing-body button {
+    display: none;
   }
 }
 
